@@ -13221,6 +13221,7 @@ iIiOkQ5QRERERER0jL8BBOI9TFDT2ScAAAAASUVORK5CYII=
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> max_depth = 3:
 As more training points are added the training score reduced while the testing score increased. I concur that as more training points are added there is less overfitting and a more generic model to the structure of the data is formed. Yes, I think having more training points would benefit the model.</p>
+<p>Beyond a point the train and test curves level of with a small score gap between them. This indicates that the model</p>
 
 </div>
 </div>
@@ -13736,6 +13737,7 @@ max depth of 10: high variance. There is a large gap between train and test erro
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> Grid search is a library to fit a training data like other models, but it tries different combinations of the parameters, optimizes the model and returns the best one.</p>
+<p>Grid search tests the parameters one combination at a time. With every combination it generates the score as per the scoring_function passed. The model which had the highest score is returned in the end.</p>
 
 </div>
 </div>
@@ -13757,6 +13759,8 @@ max depth of 10: high variance. There is a large gap between train and test erro
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> k-fold cross-validation is to randomly split the data into k parts and train on k-1 parts and test on 1 part. and do the same for all k combinations.</p>
+<p>In k-fold cross-validatin we perform k tests. Each subset gets used for training k-1 one times and will be used as test set 1 time. We would usually take the mean of all the different test scores generated to determine the final accuracy of the model.</p>
+<p>Grid search runs cross-validation test (i.e., k tests based on k-fold dataset) on each model generated. This ensures that the final score generated for each model is a fair score which generalizes to the entire dataset rather than overfitting on one set of train/test set which could be biased towards a particular parameter (like nationality, race, religion etc)</p>
 
 </div>
 </div>
