@@ -13220,8 +13220,9 @@ iIiOkQ5QRERERER0jL8BBOI9TFDT2ScAAAAASUVORK5CYII=
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong> max_depth = 3:
-As more training points are added the training score reduced while the testing score increased. I concur that as more training points are added there is less overfitting and a more generic model to the structure of the data is formed. Yes, I think having more training points would benefit the model.</p>
-<p>Beyond a point the train and test curves level of with a small score gap between them. This indicates that the model</p>
+As more training points are added to the training score is reduced while the testing score increased till 300 data points. After this there was less change in training or testing curve.</p>
+<p>Beyond a point the train and test curves level off with a small score gap between them. This indicates that the model has trained to its best. If we want to get better results we might have to modify the model as more data would not bring in better results.</p>
+<p>No, In this case since the train and test curves have converged more data would not help the model improve any more. Having more data is generally good but if you see little improvement in testing score it is probably time to stop. The gap between training and testing data being small shows that there is less overfitting. So, there is not even the motivation to add more data to avoid overfitting. Hence, as more training points are added the training and testing curves would not vary much. They would stay at the same level as it is now. Adding more training points would not benefit the model since it seems to have already trained to its best accuracy. In fact more data in this case could cause additional expense in terms of money and time.</p>
 
 </div>
 </div>
